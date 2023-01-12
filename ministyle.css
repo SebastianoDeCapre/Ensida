@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.top-flexbox {
+  width: 100%;
+  background-image: linear-gradient(white, rgb(230, 222, 222));
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-div {
+  height: 100%;
+  width: 5%;
+  background-color: blue;
+  margin-right: 10%;
+}
+
+.settingsmenu {
+  margin-right: 0%;
+  margin-left: 10%;
+  width: 3%;
+  height: 100%;
+}
+
+.fa-solid {
+  font-size: 40px;
+}
+
+.settingmenu:hover {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.background-gif {
+  width: 100%;
+  height: 600px;
+  background-color: grey;
+}
+
+.gif-header {
+  font-size: xx-large;
+  padding-top: 10%;
+  padding-left: 10%;
+  color: azure;
+}
+
+.gif-text {
+  font-size: larger;
+  float: right;
+  padding-top: 6%;
+  padding-right: 10%;
+  max-width: 13%;
+}
+
+.info-box {
+  background-image: radial-gradient(white, rgb(204, 204, 204));
+  width: 230px;
+  height: 350px;
+  border-radius: 8px 8px;
+  margin: 2%;
+}
+
+.info-box:hover {
+  box-shadow: 5px 5px 5px #0000008b;
+  transition: 1s;
+}
+
+.info-box-image {
+  padding-top: 5%;
+  padding-left: 10%;
+  width: 80%;
+  height: 36%;
+}
+
+h1 {
+  font-size: larger;
+  text-align: center;
+}
+
+.central {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.info-flexbox {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  background-image: radial-gradient(rgb(176, 176, 176), rgb(161, 161, 161));
+  height: 100px;
+}
