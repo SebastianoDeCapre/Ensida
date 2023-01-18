@@ -1,6 +1,9 @@
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .top-flexbox {
   width: 100%;
@@ -64,7 +67,7 @@ body {
 .info-box {
   background-image: radial-gradient(white, rgb(204, 204, 204));
   width: 230px;
-  height: 350px;
+  height: 365px;
   border-radius: 8px 8px;
   margin: 2%;
 }
@@ -89,16 +92,6 @@ h1 {
 .central {
   padding-right: 10%;
   padding-left: 10%;
-}
-
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  grid-column-gap: 5vh;
-  justify-items: center;
-  align-items: center;
-  width: 80%;
-  margin-left: 10%;
 }
 
 .info-flexbox {
@@ -185,11 +178,19 @@ a.two:hover {
   .info-flexbox {
     height: 2000px;
   }
+  .flex-div {
+    margin-left: 70px;
+    width: 22%;
+  }
 }
 
 @media screen and (max-width: 800px) and (min-width: 600px) {
   .info-flexbox {
     height: 1200px;
+  }
+  .flex-div {
+    margin-left: 40px;
+    width: 15%;
   }
 }
 
@@ -197,21 +198,10 @@ a.two:hover {
   .info-flexbox {
     height: 800px;
   }
-}
-
-#dark-mode {
-  background-color: black;
-  color: white;
-}
-
-.dark-div {
-  background-color: rgb(32, 29, 29);
-}
-
-#label {
-  width: 15px;
-  height: auto;
-  background-color: black;
+  .flex-div {
+    margin-left: 30px;
+    width: 15%;
+  }
 }
 
 #dropdown-text {

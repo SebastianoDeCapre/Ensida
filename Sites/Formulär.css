@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.background {
+  background-image: linear-gradient(#ffffff, #9bbdd3);
+  width: 100%;
+  height: 1000px;
+}
+
+.forum {
+  height: 33%;
+  width: 30%;
+  background-color: aliceblue;
+  margin-left: 34%;
+  position: relative;
+  box-shadow: 10px 10px #95a7b5;
+}
+
+.forum-text {
+  padding-top: 10%;
+  padding-left: 14%;
+}
+
+.button {
+  margin-top: 5px;
+  margin-left: 65%;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 90px;
+  height: 30px;
+  border-radius: 8px;
+  padding-top: 10px;
+}
+
+.button:hover {
+  background-color: lightgreen;
+  transition: 0.5s;
+}
+
+.Header {
+  color: blue;
+  font-size: 4em;
+  width: 400px;
+  margin-left: 420px;
+  margin-top: 200px;
+}
+
+.footer {
+  width: 100%;
+  background-image: radial-gradient(rgb(176, 176, 176), rgb(161, 161, 161));
+  height: 100px;
+  bottom: 0;
+}
+
+.top-flexbox {
+  width: 100%;
+  background-image: linear-gradient(white, rgb(230, 222, 222));
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 400px) {
+  .forum {
+    width: 90%;
+    margin-left: 5%;
+    height: 80%;
+  }
+  .Header {
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+  .forum-text {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .forum {
+    width: 75%;
+    margin-left: 13%;
+    height: 55%;
+  }
+  .Header {
+    margin-left: 80px;
+  }
+  .forum-text {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 800px) {
+  .forum {
+    width: 70%;
+    margin-left: 15%;
+    height: 55%;
+  }
+  .Header {
+    margin-left: 100px;
+  }
+  .forum-text {
+    font-size: 2em;
+  }
+}

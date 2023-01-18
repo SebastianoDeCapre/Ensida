@@ -4,12 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Log in</title>
+    <link rel="stylesheet" href="Formulär.css" />
     <link rel="stylesheet" href="ministyle-sites.css" />
   </head>
   <body>
-    <div class="top-flexbox"></div>
-    <div class="support-us-div"></div>
+    <div class="top-flexbox">
+      <div id="logo">Gymden</div>
+      <div class="flex-div">
+        <form>
+          <input type="button" value="Go back!" onclick="history.back()" />
+        </form>
+      </div>
+    </div>
+    <div class="Header">Support Us!</div>
+    <div class="background">
+      <div class="forum">
+        <div class="forum-text">
+          <form>
+            Full Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" />
+          </form>
+          <p></p>
+          <form>
+            Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" />
+          </form>
+          <p></p>
+          <form>
+            Amount ($): &nbsp;&nbsp;
+            <input type="text" />
+          </form>
+          <p></p>
+          <form>Credit Card:&nbsp;&nbsp;&nbsp; <input type="text" /></form>
+          <p></p>
+          <form>
+            CVV code: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" />
+            <form></form>
+          </form>
+          <p></p>
+          <form>
+            Experation Date:
+            <select name="month" id="month">
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">Agust</option>
+              <option value="09">October</option>
+              <option value="10">November</option>
+              <option value="11">September</option>
+              <option value="12">December</option>
+            </select>
+            <select name="year" class="year">
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+              <option value="2031">2031</option>
+            </select>
+          </form>
+        </div>
+        <a
+          href="http://127.0.0.1:5500/Webbutveckling/%C3%96vningar/Formul%C3%A4r/Sidan.html"
+          ><span class="button">Donate!</span></a
+        >
+      </div>
+    </div>
     <div class="footer"></div>
   </body>
 </html>
