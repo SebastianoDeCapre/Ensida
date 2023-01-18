@@ -11,30 +11,27 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="dark-mode">
     <div class="top-flexbox">
-      <img scr="logo.jpeg" class="flex-div" />
-      <div class="flex-div"></div>
-      <div class="flex-div"></div>
-      <div class="flex-div"></div>
-      <div class="flex-div"></div>
-      <div class="flex-div"></div>
-      <div class="settingsmenu">
-        <i class="fa-solid fa-gear"></i>
-        <i class="fas fa-cog fa-spin"></i>
+      <div id="logo">Gymden</div>
+      <div class="flex-div"><a class="two" href="stars">Stars</a></div>
+      <div class="flex-div"><a class="two" href="Sites\Support Us.html">Support Us!</a></div>
+      <div class="flex-div dropdown" id="settingsmenu">
+        <i class="fa-solid fa-gear">
+          <div class="dropdown-content">
+             <p id="dropdown-text">Dark Mode</p><input type="checkbox" id="menu-icon">
+          </div>
+        </i>
       </div>
     </div>
     <div class="background-gif" id="Intro_image">
       <div class="gif-header">:D</div>
       <div class="gif-text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
-        perspiciatis inventore quos natus cupiditate! Eum reprehenderit
-        molestias aspernatur, quae, quam accusamus dolorum similique earum,
-        deleniti exercitationem culpa fuga corrupti quibusdam!
+        höhö en sån färg skulle man ha
       </div>
     </div>
-    <div class="top-flexbox"></div>
-    <div class="info-flexbox">
+    <div class="top-flexbox dark-div"></div>
+    <div class="info-flexbox" id="stars">
       <a class="info-box" href="Sites\Main-Sequence-star-site.html" target="blank_">
         <div>
           <img
@@ -97,5 +94,8 @@
       </a>
     </div>
     <div class="footer"></div>
+    <label for="menu-icon" id="label"></label>
+
+      
   </body>
 </html>
