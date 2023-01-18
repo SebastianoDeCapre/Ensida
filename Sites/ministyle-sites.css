@@ -1,6 +1,9 @@
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .top-flexbox {
   width: 100%;
@@ -14,7 +17,7 @@ body {
   height: 100%;
   width: 10%;
   margin-right: 2%;
-  margin-top: 7px;
+  margin-top: 12px;
   text-align: center;
 }
 
@@ -22,82 +25,9 @@ body {
   text-decoration: underline;
 }
 
-#settingsmenu {
-  position: absolute;
-  right: 0;
-  height: auto;
-  border: none;
-  width: 5%;
-}
-
-.fa-solid {
-  font-size: 30px;
-  margin-top: 2px;
-}
-
-.fa-solid:hover {
-  color: blue;
-}
-
-.background-gif {
-  width: 100%;
-  height: 600px;
-  background-color: grey;
-}
-
-.gif-header {
-  font-size: xx-large;
-  padding-top: 10%;
-  padding-left: 10%;
-  color: azure;
-}
-
-.gif-text {
-  font-size: larger;
-  float: right;
-  padding-top: 6%;
-  padding-right: 10%;
-  max-width: 13%;
-}
-
-.info-box {
-  background-image: radial-gradient(white, rgb(204, 204, 204));
-  width: 230px;
-  height: 350px;
-  border-radius: 8px 8px;
-  margin: 2%;
-}
-
-.info-box:hover {
-  box-shadow: 5px 5px 5px 4px #0000008b;
-  transition: 1s;
-}
-
-.info-box-image {
-  padding-top: 5%;
-  padding-left: 10%;
-  width: 80%;
-  height: 36%;
-}
-
 h1 {
   font-size: larger;
   text-align: center;
-}
-
-.central {
-  padding-right: 10%;
-  padding-left: 10%;
-}
-
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  grid-column-gap: 5vh;
-  justify-items: center;
-  align-items: center;
-  width: 80%;
-  margin-left: 10%;
 }
 
 .info-flexbox {
@@ -126,93 +56,93 @@ a:active {
 }
 
 #logo {
-  background-image: url(LOGO.jpg);
+  font-size: x-large;
   height: auto;
   width: 7%;
-}
-
-#Intro_image {
-  background-image: url(Intro_Backgound.jpg);
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  right: 0;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  font-size: small;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
+  margin-top: 6px;
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 400px) {
-  .info-flexbox {
-    height: 2000px;
+  .flex-div {
+    margin-left: 80px;
+    font-size: larger;
   }
 }
 
 @media screen and (max-width: 800px) and (min-width: 600px) {
-  .info-flexbox {
-    height: 1200px;
+  .flex-div {
+    margin-left: 35px;
+    font-size: larger;
   }
 }
 
 @media screen and (max-width: 900px) and (min-width: 800px) {
-  .info-flexbox {
-    height: 800px;
+  .flex-div {
+    margin-left: 30px;
+    font-size: larger;
   }
-}
-
-#dark-mode {
-  background-color: black;
-  color: white;
-}
-
-.dark-div {
-  background-color: rgb(32, 29, 29);
-}
-
-#label {
-  width: 15px;
-  height: auto;
-  background-color: black;
-}
-
-#dropdown-text {
-  font-size: x-small;
 }
 
 .support-us-background {
   background-image: radial-gradient(white, rgb(204, 204, 204));
   height: 1000px;
   width: 100%;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+a.two:hover {
+  text-decoration: underline;
+}
+
+.information-background {
+  width: 100%;
+  height: 700px;
+}
+
+.parent {
+  padding: 16px 16px;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  padding: 16px 16px;
+  vertical-align: middle;
+  max-width: 200px;
+}
+
+.anti-wide {
+  width: 200px;
+  height: auto;
+}
+
+#bigger-info {
+  height: 800px;
+}
+
+.obligatorisk-animation {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px 5px;
+  background-color: yellow;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
